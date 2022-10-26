@@ -1,10 +1,34 @@
 
 
+
+
+
       
-     driver = liberary.browser.launchBrowser("chrome");
+     package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class FirstTest {
+
+	static WebDriver driver;
+	
+	
+	
+	public static void main(String[] args) {
+		
+    
+		driver = liberary.browser.launchBrowser("chrome");
 
 		driver.get("https://i6.io/");
-    
+
 		driver.findElement(By.cssSelector(".fs-cc-banner_button")).click();
 		
 		driver.findElement(By.xpath("/html/body/div[16]/div[1]/div/nav/a[1]")).click();
@@ -28,7 +52,7 @@
 		WebElement firstEle = sel.getFirstSelectedOption();
 		System.out.println("first element ="+firstEle.getText());
 		
-		
+
 		
 		//driver.findElement(By.id("Message-2")).sendKeys("Leave Blank");
 		
@@ -37,10 +61,9 @@
 		driver.findElement(By.cssSelector(".i6-button.features-button")).click();
 		
 	}
-}
+	}
 	
-	
-	//Mave Dependence
+	//Maven Dependencies
 	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	 <modelVersion>4.0.0</modelVersion>
 	<groupId>SeleniumTraining</groupId>
@@ -61,5 +84,14 @@
 			</project>
 
 
-The Test failed! Please fill in this field pupped up after Clicked on the submit button. 
-This occurred due to the incorrect email and blank mandatory field (message field & Company field)
+Please follow the instruction to run the test
+1.	Lunch eclipse 
+2.	Copy and paste the Maven dependencies in the porn.xml file in eclipse 
+3.	Create New Java Project  and create Class
+4.	Copy and paste the test script
+5.	Run the script 
+
+
+
+The Test failed! Please fill in this field pop-up after Clicked on the submit button. 
+This occurred due to the incorrect email and blank mandatory field (message field & Company field) were not competed and it returned 
