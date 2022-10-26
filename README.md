@@ -94,4 +94,6 @@ Please follow the instruction to run the test
 
 
 The Test failed! Please fill in this field pop-up after Clicked on the submit button. 
-This occurred due to the incorrect email and blank mandatory field (message field & Company field) were not competed and it returned 
+This occurred due to the incorrect email and blank mandatory field (message field & Company field) were not completed and it returned 
+
+Error : (SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder"}
