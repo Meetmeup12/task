@@ -11,12 +11,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirstTest {
 
@@ -27,7 +30,8 @@ public class FirstTest {
 	public static void main(String[] args) {
 		
     
-		driver = liberary.browser.launchBrowser("chrome");
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();;
 
 		driver.get("https://i6.io/");
 
@@ -55,12 +59,14 @@ public class FirstTest {
 		System.out.println("first element ="+firstEle.getText());
 		
 
-		
 		//driver.findElement(By.id("Message-2")).sendKeys("Leave Blank");
 		
 		driver.findElement(By.xpath("//*[@id=\"Subscribe-to-Email\"]")).click();
 		
 		driver.findElement(By.cssSelector(".i6-button.features-button")).click();
+		
+		driver.quit();
+		
 		
 	}
 	}
@@ -85,13 +91,25 @@ public class FirstTest {
 			  </dependencies>
 			</project>
 
-
-Please follow the instruction to run the test
+// Please follow the instruction to run the test
 1.	Lunch eclipse 
 2.	Copy and paste the Maven dependencies in the porn.xml file in eclipse 
 3.	Create New Java Project  and create Class
 4.	Copy and paste the test script
-5.	Run the script 
+5.	
+6.	import org.openqa.selenium.By;
+7.	
+8	import org.openqa.selenium.WebDriver;
+
+9	import org.openqa.selenium.WebElement;
+
+10	import org.openqa.selenium.support.ui.Select;
+
+11	Create WebDriverManager.chromedriver().setup();
+
+	WebDriver driver = new ChromeDriver();
+	
+12.	Run the script 
 
 
 
