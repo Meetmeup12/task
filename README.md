@@ -96,20 +96,20 @@ public class FirstTest {
 2.	Copy and paste the Maven dependencies in the porn.xml file in eclipse 
 3.	Create New Java Project  and create Class
 4.	Copy and paste the test script
-5.	
-6.	import org.openqa.selenium.By;
-7.	
-8	import org.openqa.selenium.WebDriver;
+	
+5	import org.openqa.selenium.By;
+	
+6	import org.openqa.selenium.WebDriver;
 
-9	import org.openqa.selenium.WebElement;
+7	import org.openqa.selenium.WebElement;
 
-10	import org.openqa.selenium.support.ui.Select;
+8	import org.openqa.selenium.support.ui.Select;
 
-11	Create WebDriverManager.chromedriver().setup();
+9	Create WebDriverManager.chromedriver().setup();
 
 	WebDriver driver = new ChromeDriver();
 	
-12.	Run the script 
+10.	Run the script 
 
 
 
